@@ -23,6 +23,7 @@ Add below lines to setings xml in maven
     </server>
 
 Add below lines to pom xml in project ( Already added in this project )
+
              <plugin>
 				<groupId>com.google.cloud.tools</groupId>
 				<artifactId>jib-maven-plugin</artifactId>
