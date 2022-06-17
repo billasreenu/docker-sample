@@ -13,4 +13,11 @@ public class HelloController {
 		System.out.println("HelloController " + LocalDateTime.now());
 		return "Hello docker world";
 	}
+
+	@GetMapping("/test")
+	public String test() {
+		System.out.println("HelloController  test " + LocalDateTime.now());
+		return "Hello docker world";
+	}
+
 }
