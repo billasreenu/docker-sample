@@ -12,3 +12,14 @@ docker tag dockerworld:1.0 bilasreenu19/dockerworld:1.0
 docker push bilasreenu19/dockerworld:1.0
 
 
+## Build and push image using Google Jib
+
+Add below lines to setings xml in maven
+
+    <server>
+      <id>registry.hub.docker.com</id>
+      <username>DockerId</username>
+      <password>Password</password>
+    </server>
+
+mvn clean compile jib:build
