@@ -40,3 +40,4 @@ Add below lines to pom xml in project ( Already added in this project )
 run below maven command
 			
     mvn clean compile jib:build
+
