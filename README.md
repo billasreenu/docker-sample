@@ -22,4 +22,17 @@ Add below lines to setings xml in maven
       <password>Password</password>
     </server>
 
+Add below lines to pom xml in project ( Already added in this project )
+             <plugin>
+				<groupId>com.google.cloud.tools</groupId>
+				<artifactId>jib-maven-plugin</artifactId>
+				<version>3.2.1</version>
+				<configuration>
+					<to>
+						<image>registry.hub.docker.com/bilasreenu19/dockerworld</image>
+					</to>
+				</configuration>
+			</plugin>
+
+			
 mvn clean compile jib:build
