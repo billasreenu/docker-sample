@@ -20,4 +20,10 @@ public class HelloController {
 		return "Hello docker world";
 	}
 
+
+@GetMapping("/test1")
+	public String test1() {
+		System.out.println("HelloController  test " + LocalDateTime.now());
+		return "Hello docker world";
+	}
 }
