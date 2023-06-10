@@ -11,19 +11,18 @@ public class HelloController {
 	@GetMapping("/")
 	public String get() {
 		System.out.println("HelloController " + LocalDateTime.now());
-		return "Hello docker world";
+		return "Hello docker world" + LocalDateTime.now();
 	}
 
 	@GetMapping("/test")
 	public String test() {
 		System.out.println("HelloController  test " + LocalDateTime.now());
-		return "Hello docker world";
+		return "Hello docker world" + LocalDateTime.now();
 	}
 
-
-@GetMapping("/test1")
+	@GetMapping("/test1")
 	public String test1() {
 		System.out.println("HelloController  test " + LocalDateTime.now());
-		return "Hello docker world";
+		return "Hello docker world" + LocalDateTime.now();
 	}
 }
