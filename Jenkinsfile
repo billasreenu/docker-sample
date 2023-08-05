@@ -3,17 +3,17 @@ pipeline {
     stages {
         stage('MavenClean') {
             steps {
-                sh 'mvn clean' 
+               mvn clean
             }
         }
         stage('Build') {
             steps {
-                sh 'mvn package -DskipTests' 
+                mvn package -DskipTests 
             }
         }
         stage('UnitTests') {
             steps {
-                sh 'mvn test' 
+                mvn test
             }
         }
     }
