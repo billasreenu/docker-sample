@@ -1,17 +1,17 @@
 pipeline {
     agent any 
     stages {
-        stage('Stage 1') {
+        stage('MavenClean') {
             steps {
                 sh 'mvn clean' 
             }
         }
-        stage('Stage 2') {
+        stage('Build') {
             steps {
                  sh 'mvn package -DskipTests' 
             }
         }
-        stage('Stage 3') {
+        stage('UnitTests') {
             steps {
                 sh 'mvn test' 
             }
