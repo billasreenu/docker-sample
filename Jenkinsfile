@@ -1,19 +1,19 @@
 pipeline {
     agent any 
     stages {
-        stage('Stage 1') {
+        stage('MavenClean') {
             steps {
-                echo 'Multibranch pipeline Hello world! 1' 
+                sh 'mvn clean' 
             }
         }
-        stage('Stage 2') {
+        stage('Build') {
             steps {
-                echo 'Multibranch pipeline Hello world! 2' 
+                sh 'mvn package -DskipTests' 
             }
         }
-        stage('Stage 3') {
+        stage('UnitTests') {
             steps {
-                echo 'Multibranch pipeline Hello world! 3' 
+                sh 'mvn test' 
             }
         }
     }
