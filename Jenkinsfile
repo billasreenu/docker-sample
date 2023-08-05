@@ -3,17 +3,17 @@ pipeline {
     stages {
         stage('Stage 1') {
             steps {
-                echo 'Multibranch pipeline Hello world! 1' 
+                sh 'mvn clean' 
             }
         }
         stage('Stage 2') {
             steps {
-                echo 'Multibranch pipeline Hello world! 2' 
+                 sh 'mvn package -DskipTests' 
             }
         }
         stage('Stage 3') {
             steps {
-                echo 'Multibranch pipeline Hello world! 3' 
+                sh 'mvn test' 
             }
         }
     }
