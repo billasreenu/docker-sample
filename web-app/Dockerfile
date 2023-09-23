@@ -1,4 +1,3 @@
 FROM nginx:1.20
-COPY nginx.conf /etc/nginx/nginx.conf
-COPY index.html /etc/nginx/html/
+COPY index.html /usr/share/nginx/html
 EXPOSE 8080
