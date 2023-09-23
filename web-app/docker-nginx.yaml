@@ -11,8 +11,8 @@ services:
     expose:
       - "8080"
     ports:
-      - "80:80"
-      - "443:443"
+      - "8080:80"
+      - "8443:443"
 
 # docker-compose -f docker-nginx.yaml -p dockerwebapp up
 # 
