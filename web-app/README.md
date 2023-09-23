@@ -19,3 +19,10 @@ http://localhost:8080/
    
    docker container prune
    
+## Docker compose 
+
+ docker-compose -f docker-nginx.yaml -p dockerwebapp up -d
+ 
+ docker-compose -f docker-nginx.yaml -p dockerwebapp down
+ 
+ 

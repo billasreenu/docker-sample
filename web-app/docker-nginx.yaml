@@ -13,6 +13,3 @@ services:
     ports:
       - "8080:80"
       - "8443:443"
-
-# docker-compose -f docker-nginx.yaml -p dockerwebapp up
-# 
